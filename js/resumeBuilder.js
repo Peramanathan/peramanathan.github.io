@@ -5,8 +5,9 @@ var role = "Emerging full-stack developer comfortable with Python, Node.js , RES
 var formatedName = HTMLheaderName.replace("%data%", name);
 var formatedRole = HTMLheaderRole.replace("%data%", role);
 
-$("#header").append(formatedName);
-$("#header").append(formatedRole);
+// As <div header> has <ul> list just we prepend
+$("#header").prepend(formatedRole);
+$("#header").prepend(formatedName);
 
 
 console.log(name);
